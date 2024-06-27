@@ -75,7 +75,7 @@ var products = [
       'assets/images/nike_air_force_2.png',
       'assets/images/nike_air_force_3.png'
     ],
-    'colors': ['white', 'green'],
+    'colors': ['green', 'white'],
   },
   {
     'id': '7',

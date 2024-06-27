@@ -213,14 +213,21 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                         ),
                       ),
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => CartPage()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => CartPage()));
                       },
-                      child: Text('Add to Cart', style: TextStyle(color: Colors.white, fontSize: containerSize * 0.05),),
+                      child: Text(
+                        'Add to Cart',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: containerSize * 0.05),
+                      ),
                     ),
                   ),
                 ],
               ),
-             
             ],
           ),
         ),

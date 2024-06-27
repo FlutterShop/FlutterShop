@@ -4,7 +4,6 @@ class ColorSelectionModel extends ChangeNotifier {
   List<String> selectedColors = [];
   List<String> selectedBrands = [];
   String selectedSize = '';
-
   void addColor(String color) {
     selectedColors.add(color);
     notifyListeners();
