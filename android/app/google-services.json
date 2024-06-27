@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "795339981839",
+    "project_id": "fluttershop-c33a9",
+    "storage_bucket": "fluttershop-c33a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795339981839:android:5f9dd3eee9d2a84c048f7a",
+        "android_client_info": {
+          "package_name": "com.example.shoes_shop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJk-hcVwpusgYohziLWxrVMu-4CW3J0As"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
