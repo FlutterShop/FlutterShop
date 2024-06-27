@@ -24,14 +24,16 @@ class _FiltersPageState extends State<FiltersPage> {
         title: const Text('Filters'),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           const Text(
             'Color',
             style: TextStyle(fontSize: 15),
           ),
           Container(
-            margin: const EdgeInsets.all(20),
-            padding: const EdgeInsets.all(15.0),
+            width: double.infinity,
+            margin: const EdgeInsets.all(5),
+            padding: const EdgeInsets.all(10.0),
             decoration: BoxDecoration(
               border: Border.all(
                   width: 1, color: const Color.fromARGB(255, 226, 222, 222)),
@@ -39,6 +41,8 @@ class _FiltersPageState extends State<FiltersPage> {
             child: Row(
               children: [
                 const Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     ColorFilter(
                         backgroudColor: Color.fromARGB(255, 5, 80, 141),
@@ -58,9 +62,11 @@ class _FiltersPageState extends State<FiltersPage> {
                   ],
                 ),
                 const SizedBox(
-                  width: 20,
+                  width: 12,
                 ),
                 const Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     ColorFilter(
                         backgroudColor: Color.fromARGB(255, 188, 177, 132),
@@ -80,9 +86,11 @@ class _FiltersPageState extends State<FiltersPage> {
                   ],
                 ),
                 const SizedBox(
-                  width: 20,
+                  width: 12,
                 ),
                 Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const ColorFilter(
                         backgroudColor: Color.fromARGB(255, 7, 72, 44),
@@ -154,7 +162,7 @@ class _FiltersPageState extends State<FiltersPage> {
           ),
           Container(
             width: double.infinity,
-            margin: const EdgeInsets.all(20),
+            margin: const EdgeInsets.all(5),
             padding: const EdgeInsets.all(15.0),
             decoration: BoxDecoration(
               border: Border.all(

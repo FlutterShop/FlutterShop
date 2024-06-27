@@ -65,6 +65,8 @@ class _ProductListPageState extends State<ProductListPage> {
   Widget build(BuildContext context) {
     var selectedColors = context.watch<ColorSelectionModel>().selectedColors;
     var selectedBrands = context.watch<ColorSelectionModel>().selectedBrands;
+    final screenWidth = MediaQuery.of(context).size.width;
+    final textSize = screenWidth * 0.06;
 
     chooseColorBrand(selectedColors, selectedBrands);
 
@@ -83,12 +85,12 @@ class _ProductListPageState extends State<ProductListPage> {
         children: [
           Row(
             children: [
-              const Padding(
-                padding: EdgeInsets.all(20.0),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
                 child: Text(
                   'Shoes Shop',
                   style: TextStyle(
-                      color: Color.fromARGB(255, 2, 79, 52), fontSize: 30),
+                      color: const  Color.fromARGB(255, 2, 79, 52), fontSize: textSize),
                 ),
               ),
               Expanded(

@@ -19,13 +19,21 @@ class ColorFilter extends StatefulWidget {
 class _ColorFilterState extends State<ColorFilter> {
   bool isSelected = false;
 
+
   @override
   Widget build(BuildContext context) {
+
+    final screenWidth = MediaQuery.of(context).size.width;
+
+    final buttonSize = screenWidth * 0.24;
+
     return TextButton(
       style: TextButton.styleFrom(
+        fixedSize: Size.fromWidth(buttonSize),
         backgroundColor: isSelected
             ? const Color.fromARGB(255, 174, 173, 173)
             : const Color.fromARGB(255, 233, 231, 231),
+            
       ),
       onPressed: () {
         setState(() {
@@ -46,7 +54,7 @@ class _ColorFilterState extends State<ColorFilter> {
             radius: 10,
           ),
           const SizedBox(
-            width: 15,
+            width: 10,
           ),
           Text(
             widget.color,

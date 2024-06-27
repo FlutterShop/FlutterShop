@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 class ColorSelectionModel extends ChangeNotifier {
   List<String> selectedColors = [];
   List<String> selectedBrands = [];
+  String selectedSize = '';
 
   void addColor(String color) {
     selectedColors.add(color);
@@ -31,6 +32,16 @@ class ColorSelectionModel extends ChangeNotifier {
 
   void clearBrand() {
     selectedBrands.clear();
+    notifyListeners();
+  }
+
+  void addSize(String size) {
+    selectedSize = size;
+    notifyListeners();
+  }
+
+  void removeSize() {
+    selectedSize = '';
     notifyListeners();
   }
 }
