@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shoes_shop/authentication/home_screen.dart';
+
 import 'package:shoes_shop/views/cart_page.dart';
 import 'package:shoes_shop/views/product_list_page.dart';
 
@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int currentPage = 0;
 
-  List<Widget> pages = const [ProductListPage(), CartPage(), LoginPage()];
+  List<Widget> pages = const [ProductListPage(), CartPage()];
 
   @override
   Widget build(BuildContext context) {

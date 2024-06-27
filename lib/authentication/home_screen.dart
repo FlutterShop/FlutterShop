@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
             },
             icon: Icon(
               Icons.person,
-              color: (user == null) ? Colors.white : Colors.yellow,
+              color: (user == null) ? const Color.fromARGB(255, 0, 0, 0) : Colors.yellow,
             ),
           ),
         ],
