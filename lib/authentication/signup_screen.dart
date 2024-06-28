@@ -1,6 +1,7 @@
 import 'package:email_validator/email_validator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:shoes_shop/authentication/login_screen.dart';
 import 'package:shoes_shop/services/snack_bar.dart';
 
 
@@ -44,7 +45,7 @@ class _SignUpScreen extends State<SignUpScreen> {
         passwordTextRepeatInputController.text) {
       SnackBarService.showSnackBar(
         context,
-        'Пароли должны совпадать',
+        'Passwords must match',
         true,
       );
       return;
@@ -61,7 +62,7 @@ class _SignUpScreen extends State<SignUpScreen> {
       if (e.code == 'email-already-in-use') {
         SnackBarService.showSnackBar(
           context,
-          'Такой Email уже используется, повторите попытку с использованием другого Email',
+          'The Email is already in use, try again using a different Email',
           true,
         );
         return;
@@ -82,7 +83,7 @@ class _SignUpScreen extends State<SignUpScreen> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        title: const Text('Зарегистрироваться'),
+        title: const Text('Sign up'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(30.0),
@@ -96,11 +97,11 @@ class _SignUpScreen extends State<SignUpScreen> {
                 controller: emailTextInputController,
                 validator: (email) =>
                     email != null && !EmailValidator.validate(email)
-                        ? 'Введите правильный Email'
+                        ? 'Enter correct Email'
                         : null,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
-                  hintText: 'Введите Email',
+                  hintText: 'Enter Email',
                 ),
               ),
               const SizedBox(height: 30),
@@ -110,11 +111,11 @@ class _SignUpScreen extends State<SignUpScreen> {
                 obscureText: isHiddenPassword,
                 autovalidateMode: AutovalidateMode.onUserInteraction,
                 validator: (value) => value != null && value.length < 6
-                    ? 'Минимум 6 символов'
+                    ? 'Minimum 6 characters'
                     : null,
                 decoration: InputDecoration(
                   border: const OutlineInputBorder(),
-                  hintText: 'Введите пароль',
+                  hintText: 'Enter password',
                   suffix: InkWell(
                     onTap: togglePasswordView,
                     child: Icon(
@@ -133,11 +134,11 @@ class _SignUpScreen extends State<SignUpScreen> {
                 obscureText: isHiddenPassword,
                 autovalidateMode: AutovalidateMode.onUserInteraction,
                 validator: (value) => value != null && value.length < 6
-                    ? 'Минимум 6 символов'
+                    ? 'Minimum 6 characters'
                     : null,
                 decoration: InputDecoration(
                   border: const OutlineInputBorder(),
-                  hintText: 'Введите пароль еще раз',
+                  hintText: 'Enter the password again',
                   suffix: InkWell(
                     onTap: togglePasswordView,
                     child: Icon(
@@ -152,13 +153,13 @@ class _SignUpScreen extends State<SignUpScreen> {
               const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: signUp,
-                child: const Center(child: Text('Регистрация')),
+                child: const Center(child: Text('Sign up')),
               ),
               const SizedBox(height: 30),
               TextButton(
-                onPressed: () => Navigator.of(context).pop(),
+                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen())),
                 child: const Text(
-                  'Войти',
+                  'Log in',
                   style: TextStyle(
                     decoration: TextDecoration.underline,
                   ),

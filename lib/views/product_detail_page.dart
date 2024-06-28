@@ -1,5 +1,8 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shoes_shop/authentication/login_screen.dart';
+import 'package:shoes_shop/authentication/pre_account_screen.dart';
 import 'package:shoes_shop/views/cart_page.dart';
 import 'package:shoes_shop/views/color_selection.dart';
 import 'package:shoes_shop/views/home_page.dart';
@@ -17,6 +20,9 @@ class ProductDetailsPage extends StatefulWidget {
 }
 
 class _ProductDetailsPageState extends State<ProductDetailsPage> {
+
+  User? user = FirebaseAuth.instance.currentUser;
+
   void _showBottomSheet() {
     showModalBottomSheet(
       context: context,
@@ -213,10 +219,12 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                         ),
                       ),
                       onPressed: () {
+                        if (user == null) {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => CartPage()));
+                                builder: (context) => const PreAccountScreen()));
+                        }
                       },
                       child: Text(
                         'Add to Cart',

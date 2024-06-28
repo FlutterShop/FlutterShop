@@ -1,8 +1,12 @@
 import 'package:email_validator/email_validator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:shoes_shop/authentication/account_screen.dart';
+import 'package:shoes_shop/authentication/reset_password_screen.dart';
+import 'package:shoes_shop/authentication/signup_screen.dart';
 
 import 'package:shoes_shop/services/snack_bar.dart';
+import 'package:shoes_shop/views/home_page.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -48,7 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
       if (e.code == 'user-not-found' || e.code == 'wrong-password') {
         SnackBarService.showSnackBar(
           context,
-          'Неправильный email или пароль. Повторите попытку',
+          'Incorrect email or password. Try again',
           true,
         );
         return;
@@ -62,7 +66,10 @@ class _LoginScreenState extends State<LoginScreen> {
       }
     }
 
-    navigator.pushNamedAndRemoveUntil('/home', (Route<dynamic> route) => false);
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => HomePage()),
+    );
   }
 
   @override
@@ -70,7 +77,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        title: const Text('Войти'),
+        title: const Text('Log in'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(30.0),
@@ -84,11 +91,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 controller: emailTextInputController,
                 validator: (email) =>
                     email != null && !EmailValidator.validate(email)
-                        ? 'Введите правильный Email'
+                        ? 'Enter correct Email'
                         : null,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
-                  hintText: 'Введите Email',
+                  hintText: 'Enter Email',
                 ),
               ),
               const SizedBox(height: 30),
@@ -97,12 +104,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 controller: passwordTextInputController,
                 obscureText: isHiddenPassword,
                 validator: (value) => value != null && value.length < 6
-                    ? 'Минимум 6 символов'
+                    ? 'Minimum 6 characters'
                     : null,
                 autovalidateMode: AutovalidateMode.onUserInteraction,
                 decoration: InputDecoration(
                   border: const OutlineInputBorder(),
-                  hintText: 'Введите пароль',
+                  hintText: 'Enter password',
                   suffix: InkWell(
                     onTap: togglePasswordView,
                     child: Icon(
@@ -117,22 +124,23 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: login,
-                child: const Center(child: Text('Войти')),
+                child: const Center(child: Text('Login')),
               ),
               const SizedBox(height: 30),
               TextButton(
-                onPressed: () => Navigator.of(context).pushNamed('/signup'),
+                onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const SignUpScreen())),
                 child: const Text(
-                  'Регистрация',
+                  'Sign Up',
                   style: TextStyle(
                     decoration: TextDecoration.underline,
                   ),
                 ),
               ),
               TextButton(
-                onPressed: () =>
-                    Navigator.of(context).pushNamed('/reset_password'),
-                child: const Text('Сбросить пароль'),
+                onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const ResetPasswordScreen())),
+                child: const Text('Reset the password'),
               ),
             ],
           ),

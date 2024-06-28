@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:shoes_shop/authentication/login_screen.dart';
+import 'package:shoes_shop/views/home_page.dart';
 
 class AccountScreen extends StatefulWidget {
   const AccountScreen({super.key});
@@ -16,7 +18,7 @@ class _AccountScreenState extends State<AccountScreen> {
 
     await FirebaseAuth.instance.signOut();
 
-    navigator.pushNamedAndRemoveUntil('/home', (Route<dynamic> route) => false);
+    navigator.push(MaterialPageRoute(builder: (context) => HomePage()));
   }
 
   @override
@@ -24,15 +26,8 @@ class _AccountScreenState extends State<AccountScreen> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: const Icon(
-            Icons.arrow_back_ios, // add custom icons also
-          ),
-        ),
-        title: const Text('Аккаунт'),
+        title: const Text('Account'),
+        automaticallyImplyLeading: false,
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
@@ -45,10 +40,10 @@ class _AccountScreenState extends State<AccountScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Ваш Email: ${user?.email}'),
+            Text('Your Email: ${user?.email}'),
             TextButton(
               onPressed: () => signOut(),
-              child: const Text('Выйти'),
+              child: const Text('Sign out'),
             ),
           ],
         ),

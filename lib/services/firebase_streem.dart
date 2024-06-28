@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:shoes_shop/authentication/home_screen.dart';
 import 'package:shoes_shop/authentication/verify_email_screen.dart';
+import 'package:shoes_shop/views/home_page.dart';
 
 class FirebaseStream extends StatelessWidget {
   const FirebaseStream({super.key});
@@ -18,9 +18,9 @@ class FirebaseStream extends StatelessWidget {
           if (!snapshot.data!.emailVerified) {
             return const VerifyEmailScreen();
           }
-          return const HomeScreen();
+          return const HomePage();
         } else {
-          return const HomeScreen();
+          return const HomePage();
         }
       },
     );

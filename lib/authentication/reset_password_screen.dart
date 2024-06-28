@@ -1,8 +1,8 @@
 import 'package:email_validator/email_validator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:shoes_shop/authentication/account_screen.dart';
 import 'package:shoes_shop/services/snack_bar.dart';
-
 
 class ResetPasswordScreen extends StatefulWidget {
   const ResetPasswordScreen({super.key});
@@ -38,7 +38,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
       if (e.code == 'user-not-found') {
         SnackBarService.showSnackBar(
           context,
-          'Такой email незарегистрирован!',
+          'This Email is not registered!',
           true,
         );
         return;
@@ -53,13 +53,17 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
     }
 
     const snackBar = SnackBar(
-      content: Text('Сброс пароля осуществен. Проверьте почту'),
+      content: Text('Password reset completed. Check ypur Email'),
       backgroundColor: Colors.green,
     );
 
     scaffoldMassager.showSnackBar(snackBar);
 
-    navigator.pushNamedAndRemoveUntil('/home', (Route<dynamic> route) => false);
+    Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(builder: (context) => AccountScreen()),
+      (Route<dynamic> route) => false,
+    );
   }
 
   @override
@@ -67,7 +71,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        title: const Text('Сброс пароля'),
+        title: const Text('Password reset'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(30.0),
@@ -81,17 +85,17 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                 controller: emailTextInputController,
                 validator: (email) =>
                     email != null && !EmailValidator.validate(email)
-                        ? 'Введите правильный Email'
+                        ? 'Enter correct Email'
                         : null,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
-                  hintText: 'Введите Email',
+                  hintText: 'Enter Email',
                 ),
               ),
               const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: resetPassword,
-                child: const Center(child: Text('Сбросить пароль')),
+                child: const Center(child: Text('Reset the password')),
               ),
             ],
           ),
