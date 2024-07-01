@@ -143,7 +143,7 @@ var products = [
   {
     'id': '11',
     'title': 'Air Jordan 6 rings',
-    'price': '149',
+    'price': '111',
     'info' : 'Jordan 6 Rings mens sneakers are a unique combination of elements from several Air Jordan models inspired by the history and achievements of basketball player Michael Jordan. This model combines the characteristics and design of the shoes used during Michael Jordans six wins in the National Basketball Association.',
     'company': 'Jordan',
     'sizes': [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
@@ -157,7 +157,7 @@ var products = [
   {
     'id': '12',
     'title': 'Air Jordan Tatum',
-    'price': '234',
+    'price': '85',
     'info' : 'Tatum 1 is the first branded pair of Jason Tatum, a Boston Celtics basketball player. Jordan Tatum 1 Denim PF sneakers have increased maneuverability, counting light materials. Rubber bets do not weigh down the model, but create the necessary support where necessary. The visible Nike Zoom Air insert perfectly springs and protects joints from shock loads. A fine wavy tread on the outsole is responsible for the grip on the surface on the basketball court and beyond.',
     'company': 'Jordan',
     'sizes': [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
