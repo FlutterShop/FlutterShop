@@ -44,7 +44,9 @@ dependencies:
   provider: ^6.1.2
   firebase_core: ^2.1.0
   firebase_auth: ^4.0.2
+  google_sign_in: ^5.4.2
   email_validator: ^2.1.17
+  cloud_firestore: ^4.2.0
 
 dev_dependencies:
   flutter_test:
@@ -100,13 +102,7 @@ flutter:
     - assets/images/air_jordan_higth_1.png
     - assets/images/air_jordan_higth_2.png
     - assets/images/air_jordan_higth_3.png
-    - assets/images/air_jordan_6_rings_1.png
-    - assets/images/air_jordan_6_rings_2.png
-    - assets/images/air_jordan_6_rings_3.png
-    - assets/images/air_jordan_tatum_1.png
-    - assets/images/air_jordan_tatum_2.png
-    - assets/images/air_jordan_tatum_3.png
-
+    - assets/images/google_logo.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
