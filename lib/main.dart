@@ -15,16 +15,30 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => ColorSelectionModel(),
-      child: MaterialApp(
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(
-              seedColor: const Color.fromARGB(255, 2, 79, 52)),
-          useMaterial3: true,
-        ),
-        home: const HomePage(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => ColorSelectionModel()),
+        ChangeNotifierProvider(create: (context) => ThemeModel()),
+      ],
+      child: Consumer<ThemeModel>(
+        builder: (context, themeModel, child) {
+          return MaterialApp(
+            theme: themeModel.isDarkMode ? ThemeData.dark() : ThemeData.light(),
+            home: const HomePage(),
+          );
+        },
       ),
     );
+  }
+}
+
+class ThemeModel with ChangeNotifier {
+  bool _isDarkMode = false;
+
+  bool get isDarkMode => _isDarkMode;
+
+  void toggleDarkMode() {
+    _isDarkMode = !_isDarkMode;
+    notifyListeners();
   }
 }

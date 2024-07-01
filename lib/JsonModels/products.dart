@@ -3,7 +3,7 @@ var products = [
     'id': '1',
     'title': 'Air Jordan 4 Retro Military Blue',
     'price': '170',
-    'info': 'Мужские кроссовки Air Jordan 4 представляют собой иконическую модель, которая была выпущена в 1989 году. Эта обувь была разработана Тинкером Хэтфилдом и стала четвертой моделью в линейке кроссовок Air Jordan. Jordan 4 сочетает в себе стиль и инновации, которые сделали ее популярной как на баскетбольном плане, так и в мире моды.',
+    'info': 'The Air Jordan 4 mens running shoes are an iconic model that was released in 1989. This shoe was designed by Tinker Hatfield and became the fourth model in the Air Jordan sneaker line. Jordan 4 combines style and innovation that have made her popular both on the basketball plane and in the fashion world.',
     'company': 'Jordan',
     'sizes': [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
     'images': [
@@ -18,7 +18,7 @@ var products = [
     'id': '2',
     'title': 'Adidas Campus 00s',
     'price': '69',
-    'info' : 'Силуэт adidas Campus 00s вдохновлен скейтерскими кроссовками, которые были популярны в 2000-х. В современном стритстайле актуальность модели не уменьшается. Пара выполнена из натуральной замши. Шнуровка с дополнительными отверстиями обеспечивает плотную посадку. Мягкий язычек создает комфорт во время активной носки. Контрастные «три полоски» и логотип бренда отвечают за фирменный стиль.',
+    'info' : 'The silhouette of the adidas Campus 00s is inspired by the skate sneakers that were popular in the 2000s. In modern street style, the relevance of the model does not decrease. The pair is made of natural suede. Lacing with additional holes ensures a tight fit. The soft tongue creates comfort during active wear. Contrasting "three stripes" and the brand logo are responsible for the corporate identity.',  
     'company': 'Adidas',
     'sizes': [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
     'images': [
@@ -32,7 +32,7 @@ var products = [
     'id': '3',
     'title': 'Adidas Ozweego',
     'price': '76',
-    'info' : 'Мужские кроссовки Ozweego от adidas представляют стиль конца 90-х — начала 2000-х в новом ключе, объединяя ретро-детали с футуристическим дизайном. Модель выполнена из кожи и замши. Специальные вставки поддерживают переднюю часть стопы и пятку. Кроссовки ощущаются невероятно комфортно в течение всего дня. Вставка из сверхупругого материала Adiprene+ в передней части стопы обеспечивает мягкость шага и увеличивает силу отталкивания, а вставка в пяточной части обеспечит превосходную амортизацию при ударных нагрузках.',
+    'info' : 'The Ozweego mens sneakers from adidas represent the style of the late 90s - early 2000s in a new way, combining retro details with a futuristic design. The model is made of leather and suede. Special inserts support the forefoot and heel. The sneakers feel incredibly comfortable all day long. An insert made of superelastic Adiprene+ material in the forefoot provides a soft step and increases the repulsive force, and an insert in the heel part will provide excellent shock absorption under shock loads.',
     'company': 'Adidas',
     'sizes': [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
     'images': [
@@ -46,7 +46,7 @@ var products = [
     'id': '4',
     'title': 'Adidas Gazelle',
     'price': '90',
-    'info' : 'Кроссовки adidas Gazelle Bold — одна из знаковых моделей бренда, которую начали носить еще в 70-х годах. Верх пары изготовлен из натуральной замши. Шнуровка с дополнительными отверстиями создает комфортную посадку. Новый взгляд на классический силуэт создает трехслойная подошва, которая дополнена надежной амортизацией. За сцепление с поверхностью отвечает брендированный протектор на подметке.',
+    'info' : 'Adidas Gazelle Bold sneakers are one of the iconic models of the brand, which began to be worn back in the 70s. The top of the pair is made of natural suede. Lacing with additional holes creates a comfortable fit. A new look at the classic silhouette is created by a three-layer sole, which is complemented by reliable cushioning. The branded tread on the outsole is responsible for the grip on the surface.',
     'company': 'Adidas',
     'sizes': [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
     'images': [
@@ -60,7 +60,7 @@ var products = [
     'id': '5',
     'title': 'Adidas Superstar',
     'price': '100',
-    'info' : 'Модель, созданная в 1969 году, врывается в актуальные аутфиты с привычным визуалом и завышенной платформой. Кроссовки adidas Superstar XLG выполнены из сочетания кожи и замши. Цепкий протектор на резиновой подошве придает уверенности каждому шагу. Шнуровка отвечает за плотную посадку по стопе. Узнаваемый мысок-ракушка и легендарные «три полоски» формируют привычный образ, который идеально вписывается в любой гардероб.',
+    'info' : 'The model, created in 1969, breaks into current outfits with a familiar visual and an overpriced platform. The adidas Superstar XLG sneakers are made from a combination of leather and suede. A tenacious tread on a rubber sole gives confidence to every step. Lacing is responsible for a tight fit on the foot. The recognizable shell toe and the legendary "three stripes" form a familiar image that fits perfectly into any wardrobe.',
     'company': 'Adidas',
     'sizes': [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
     'images': [
@@ -74,7 +74,7 @@ var products = [
     'id': '6',
     'title': 'Nike Air Force 1',
     'price': '130',
-    'info' : 'Культовые кроссовки Nike Air Force 1 07 LV8 высоты low с акцентным зеленым «свушем». Модель, история которой началась с 1982 года, получила свое название в честь самолета президента США Air Force One и стала популярной благодаря завышенной пятке и технологии амортизации для дополнительной надежности и комфорта.',
+    'info' : 'Iconic Nike Air Force 1 07 LV8 high low sneakers with an accent green "swoosh". The model, whose history began in 1982, was named after the aircraft of the President of the United States Air Force One and became popular due to the inflated heel and shock absorption technology for additional reliability and comfort.',
     'company': 'Nike',
     'sizes': [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
     'images': [
@@ -88,7 +88,7 @@ var products = [
     'id': '7',
     'title': 'Nike Blazzer Mid 77',
     'price': '70',
-    'info' : 'Дизайн модели Nike Blazer Mid Pro Club был создан еще в 70-х, но, кажется, с годами он становится еще более актуальным. Верх пары выполнен из мягкой кожи и дополнен вставками из прочного текстиля. Открытый пеноматериал и необработанные края на язычке еще больше придают паре винтажности. Конструкция создана методом термической обработки, поэтому обеспечивает не только цельный обтекаемый образ, но и дарит ощущение мягкости и комфорта. Резиновая подошва с зигзагообразным протектором создает надежное сцепление с поверхностью и узнаваемый отпечаток.',
+    'info' : 'The design of the Nike Blazer Mid Pro Club model was created back in the 70s, but it seems to become even more relevant over the years. The top of the pair is made of soft leather and complemented with inserts of durable textiles. The exposed foam and raw edges on the tongue add even more vintage to the pair. The design was created by heat treatment, therefore it provides not only a one-piece streamlined image, but also gives a feeling of softness and comfort. The rubber outsole with a zigzag tread creates a reliable grip on the surface and a recognizable imprint.',
     'company': 'Nike',
     'sizes': [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
     'images': [
@@ -102,7 +102,7 @@ var products = [
     'id': '8',
     'title': 'Nike Dunk Malachite Metallic Gold',
     'price': '85',
-    'info' : 'Созданные специально для баскетбольной площадки, кроссовки Nike Dunk Low покоряют улицы города за ее пределами начиная с 80-х годов. И делают это максимально успешно. Верх пары изготовлен из натуральной кожи. Перфорация на мыске хорошо пропускает воздух, а дополнительные отверстия для шнуровки позволяют настроить комфортную плотность. Амортизация надежно защищает стопы от ударных нагрузок. Резиновая подошва с протекторами минимизирует скольжение и создает уверенное сцепление с поверхностью. Фактурный верх, современные технологии и акцентные цвета делают эти кроссовки актуальными во все времена.',
+    'info' : 'Created specifically for the basketball court, Nike Dunk Low sneakers have been conquering the streets of the city beyond its borders since the 80s. And they do it as successfully as possible. The top of the pair is made of genuine leather. The perforation on the toe allows air to pass through well, and additional lacing holes allow you to adjust the comfortable density. Shock absorption reliably protects the feet from shock loads. The rubber outsole with treads minimizes slipping and creates a confident grip on the surface. Textured upper, modern technology and accent colors make these sneakers relevant at all times.',
     'company': 'Nike',
     'sizes': [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
     'images': [
@@ -116,7 +116,7 @@ var products = [
     'id': '9',
     'title': 'Air Jordan 1 low Alternate Royal Toe',
     'price': '85',
-    'info' : 'Alternate Royal Toe Легендарная классика в низком исполнении. Кроссовки Jordan Air Jordan 1 Low созданы из сочетания натуральной и искусственной кожи. Перфорация на мыске обеспечивает активную циркуляцию воздуха. Амортизирующая вставка Air отлично пружинит и защищает стопы от ударных нагрузок. За сцепление с поверхностью отвечает подошва из резины с цепким протектором.',
+    'info' : 'Alternate Royal Toe is a legendary classic in low performance. Jordan Air Jordan 1 Low sneakers are made from a combination of natural and artificial leather. The perforation on the toe ensures active air circulation. The shock-absorbing Air insert springs perfectly and protects the feet from shock loads. A rubber sole with a tenacious tread is responsible for the grip on the surface.',
     'company': 'Jordan',
     'sizes': [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
     'images': [
@@ -130,7 +130,7 @@ var products = [
     'id': '10',
     'title': 'Air Jordan 1 MID Orange wear away',
     'price': '100',
-    'info' : 'Легендарный дизайн в новой стильной расцветке. Кроссовки Jordan Air 1 Mid SE созданы из смеси натуральной и искусственной кожи, чтобы подчеркнуть структурность и повысить износостойкость пары. Не слишком высокий силуэт позволяет стилизовать модель с любимыми аутфитами. Перфорация на мыске отвечает за активную циркуляцию воздуха. Прямая шнуровка помогает создавать плотную посадку по стопе. Воздушная подушка Air-Sole обеспечивает легкость и отличную амортизацию. Резиновая подошва с протекторами позволяет с комфортом носить обувь каждый день и быть уверенными в каждом следующем шаге. Искусственно потертые черно-желтые вставки создают неповторимый стиль и выделяют кроссовки из всей коллекции',
+    'info' : 'Legendary design in a new stylish coloring. Jordan Air 1 Mid SE sneakers are created from a mixture of natural and artificial leather to emphasize the structure and increase the wear resistance of the pair. The not too high silhouette allows you to style the model with your favorite outfits. The perforation at the toe is responsible for active air circulation. Straight lacing helps to create a tight fit on the foot. The Air-Sole air cushion provides lightness and excellent cushioning. The rubber sole with treads allows you to comfortably wear shoes every day and be confident in every next step. Artificially worn black and yellow inserts create a unique style and distinguish the sneakers from the entire collection',
     'company': 'Jordan',
     'sizes': [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
     'images': [
@@ -142,9 +142,9 @@ var products = [
   },
   {
     'id': '11',
-    'title': 'название',
-    'price': '110',
-    'info' : 'Легендарный дизайн в новой стильной расцветке. Кроссовки Jordan Air 1 Mid SE созданы из смеси натуральной и искусственной кожи, чтобы подчеркнуть структурность и повысить износостойкость пары. Не слишком высокий силуэт позволяет стилизовать модель с любимыми аутфитами. Перфорация на мыске отвечает за активную циркуляцию воздуха. Прямая шнуровка помогает создавать плотную посадку по стопе. Воздушная подушка Air-Sole обеспечивает легкость и отличную амортизацию. Резиновая подошва с протекторами позволяет с комфортом носить обувь каждый день и быть уверенными в каждом следующем шаге. Искусственно потертые черно-желтые вставки создают неповторимый стиль и выделяют кроссовки из всей коллекции',
+    'title': 'Air Jordan 6 rings',
+    'price': '149',
+    'info' : 'Jordan 6 Rings mens sneakers are a unique combination of elements from several Air Jordan models inspired by the history and achievements of basketball player Michael Jordan. This model combines the characteristics and design of the shoes used during Michael Jordans six wins in the National Basketball Association.',
     'company': 'Jordan',
     'sizes': [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
     'images': [
@@ -156,9 +156,9 @@ var products = [
   },
   {
     'id': '12',
-    'title': 'название',
-    'price': '85',
-    'info' : 'Легендарный дизайн в новой стильной расцветке. Кроссовки Jordan Air 1 Mid SE созданы из смеси натуральной и искусственной кожи, чтобы подчеркнуть структурность и повысить износостойкость пары. Не слишком высокий силуэт позволяет стилизовать модель с любимыми аутфитами. Перфорация на мыске отвечает за активную циркуляцию воздуха. Прямая шнуровка помогает создавать плотную посадку по стопе. Воздушная подушка Air-Sole обеспечивает легкость и отличную амортизацию. Резиновая подошва с протекторами позволяет с комфортом носить обувь каждый день и быть уверенными в каждом следующем шаге. Искусственно потертые черно-желтые вставки создают неповторимый стиль и выделяют кроссовки из всей коллекции',
+    'title': 'Air Jordan Tatum',
+    'price': '234',
+    'info' : 'Tatum 1 is the first branded pair of Jason Tatum, a Boston Celtics basketball player. Jordan Tatum 1 Denim PF sneakers have increased maneuverability, counting light materials. Rubber bets do not weigh down the model, but create the necessary support where necessary. The visible Nike Zoom Air insert perfectly springs and protects joints from shock loads. A fine wavy tread on the outsole is responsible for the grip on the surface on the basketball court and beyond.',
     'company': 'Jordan',
     'sizes': [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5],
     'images': [
