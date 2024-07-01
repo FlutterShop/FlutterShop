@@ -4,11 +4,11 @@
 >The project was created so that users have the opportunity to buy quality sports shoes for sports and improve their own health.
 
 # Our application includes the following functionality:
-*Authorisation/registration
-*Product cards
-*Product filter
-*Basket
-*Payment
+* Authorisation/registration
+* Product cards
+* Product filter
+* Basket
+* Payment
 
 # Get started:
 1.
