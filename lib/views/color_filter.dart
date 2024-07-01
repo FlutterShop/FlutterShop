@@ -25,7 +25,7 @@ class _ColorFilterState extends State<ColorFilter> {
 
     final screenWidth = MediaQuery.of(context).size.width;
 
-    final buttonSize = screenWidth * 0.24;
+    final buttonSize = screenWidth * 0.26;
 
     return TextButton(
       style: TextButton.styleFrom(

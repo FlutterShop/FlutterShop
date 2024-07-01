@@ -6,6 +6,9 @@ import 'package:shoes_shop/authentication/pre_account_screen.dart';
 
 import 'package:shoes_shop/views/cart_page.dart';
 import 'package:shoes_shop/views/product_list_page.dart';
+import 'package:provider/provider.dart';
+
+import '../main.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -21,7 +24,7 @@ class _HomePageState extends State<HomePage> {
   List<Widget> get pages => [
         const ProductListPage(),
         const CartPage(),
-        user != null ? const AccountScreen() : const PreAccountScreen(),
+        user!= null? const AccountScreen() : const PreAccountScreen(),
       ];
 
   @override
@@ -56,8 +59,12 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Provider.of<ThemeModel>(context, listen: false).toggleDarkMode();
+        },
+        child: Icon(Icons.brightness_4),
+      ),
     );
   }
 }
-
-

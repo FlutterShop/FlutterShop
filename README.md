@@ -1,16 +1,17 @@
-# shoes_shop
+# Our project is a full-fledged mobile application for an online sneaker store
 
-A new Flutter project.
 
-## Getting Started
+# We were tasked with writing a mobile application on Flutter in which you can view, select and buy your favorite sneakers and find out information about them.
 
-This project is a starting point for a Flutter application.
+# The project was created so that users have the opportunity to buy quality sports shoes for sports and improve their own health.
 
-A few resources to get you started if this is your first Flutter project:
+# Our application includes the following functionality:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# 1) registration and account login
+
+# 2) filtering sneakers by brand and color scheme
+
+# 3) Adding sneakers to the shopping cart and simulating payment
+
+# 4) view the history of creating sneaker models

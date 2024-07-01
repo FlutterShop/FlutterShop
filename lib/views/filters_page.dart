@@ -16,6 +16,8 @@ class FiltersPage extends StatefulWidget {
 }
 
 class _FiltersPageState extends State<FiltersPage> {
+
+  
   bool isSelected = false;
   @override
   Widget build(BuildContext context) {
