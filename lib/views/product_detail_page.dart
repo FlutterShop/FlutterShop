@@ -102,9 +102,12 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
     final containerSize = screenWidth * 0.9;
 
     final selectedSize = context.watch<ColorSelectionModel>().selectedSize;
-
+    
+    
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -236,6 +239,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                   ),
                 ],
               ),
+              Text('${widget.product['info']}')
             ],
           ),
         ),

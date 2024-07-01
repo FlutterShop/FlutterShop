@@ -52,7 +52,7 @@ class _ProductListPageState extends State<ProductListPage> {
   @override
   void initState() {
     super.initState();
-    _searchController.addListener(_searchShoes);
+    _searchController.addListener(() => _searchShoes());
   }
 
   @override
@@ -90,7 +90,7 @@ class _ProductListPageState extends State<ProductListPage> {
                 child: Text(
                   'Shoes Shop',
                   style: TextStyle(
-                      color: const  Color.fromARGB(255, 2, 79, 52), fontSize: textSize),
+                      color: const Color.fromARGB(255, 2, 79, 52), fontSize: textSize),
                 ),
               ),
               Expanded(
@@ -103,6 +103,7 @@ class _ProductListPageState extends State<ProductListPage> {
                     enabledBorder: border,
                     focusedBorder: border,
                   ),
+                  onChanged: (value) => _searchShoes(),
                 ),
               ),
               IconButton(
@@ -117,34 +118,39 @@ class _ProductListPageState extends State<ProductListPage> {
               ),
             ],
           ),
-          Expanded(
-            child: GridView.builder(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                mainAxisSpacing: 0,
-                crossAxisSpacing: 0,
-              ),
-              itemCount: _filteredShoes.length,
-              itemBuilder: (context, index) {
-                final product = _filteredShoes[index];
-                return GestureDetector(
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) {
-                        return ProductDetailsPage(
-                          product: product,
+          ValueListenableBuilder(
+            valueListenable: _searchController,
+            builder: (context, value, child) {
+              return Expanded(
+                child: GridView.builder(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 0,
+                    crossAxisSpacing: 0,
+                  ),
+                  itemCount: _filteredShoes.length,
+                  itemBuilder: (context, index) {
+                    final product = _filteredShoes[index];
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) {
+                            return ProductDetailsPage(
+                              product: product,
+                            );
+                          }),
                         );
-                      }),
+                      },
+                      child: ProductCard(
+                        images: product['images'] as List<String>,
+                        price: product['price'] as String,
+                        title: product['title'] as String,
+                      ),
                     );
                   },
-                  child: ProductCard(
-                    images: product['images'] as List<String>,
-                    price: product['price'] as String,
-                    title: product['title'] as String,
-                  ),
-                );
-              },
-            ),
+                ),
+              );
+            },
           ),
           if (selectedBrands.isNotEmpty || selectedColors.isNotEmpty)
             TextButton(
