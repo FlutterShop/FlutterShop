@@ -192,7 +192,7 @@ class _FiltersPageState extends State<FiltersPage> {
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: Text('Show shoes')),
+              child: const Text('Show shoes', style: TextStyle(color:  Color.fromARGB(255, 2, 79, 52)),)),
         ],
       ),
     );

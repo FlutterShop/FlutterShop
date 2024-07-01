@@ -6,9 +6,9 @@ class SizeFilter extends StatefulWidget {
   final String size;
   
   const SizeFilter({
-    Key? key,
+    super.key,
     required this.size,
-  }) : super(key: key);
+  });
 
   @override
   State<SizeFilter> createState() => _SizeFilterState();
@@ -21,6 +21,7 @@ class _SizeFilterState extends State<SizeFilter> {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
     final buttonSize = screenWidth * 0.13;
+    final theme = context.watch<ColorSelectionModel>().isDarkMode;
 
     return Padding(
       padding: const EdgeInsets.all(5.0),
@@ -30,7 +31,7 @@ class _SizeFilterState extends State<SizeFilter> {
         child: OutlinedButton(
           style: OutlinedButton.styleFrom(
             side: BorderSide(
-              color: isSelected ? const Color.fromARGB(255, 2, 79, 52) : const  Color.fromARGB(255, 226, 223, 223),
+              color: isSelected ? const Color.fromARGB(255, 2, 79, 52) : theme ? Colors.white : const  Color.fromARGB(255, 226, 223, 223),
             ),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(1.0),
@@ -51,7 +52,7 @@ class _SizeFilterState extends State<SizeFilter> {
           child: Text(
             'US M ${widget.size}',
             style: TextStyle(
-              color: Colors.black ,
+              color: theme ? Colors.white : Colors.black,
               fontSize: buttonSize * 0.26,
             ),
           ),

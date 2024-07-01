@@ -4,6 +4,11 @@ class ColorSelectionModel extends ChangeNotifier {
   List<String> selectedColors = [];
   List<String> selectedBrands = [];
   String selectedSize = '';
+
+  bool isDarkMode = false;
+
+  
+  
   void addColor(String color) {
     selectedColors.add(color);
     notifyListeners();
@@ -41,6 +46,11 @@ class ColorSelectionModel extends ChangeNotifier {
 
   void removeSize() {
     selectedSize = '';
+    notifyListeners();
+  }
+
+  void toggleDarkMode() {
+    isDarkMode = !isDarkMode;
     notifyListeners();
   }
 }

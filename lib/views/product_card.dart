@@ -36,8 +36,7 @@ class ProductCard extends StatelessWidget {
               Text(
                 title,
                 style: TextStyle(
-                  fontSize: fontSize, // Use the calculated font size
-                  color: Colors.black,
+                  fontSize: fontSize, 
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -45,8 +44,7 @@ class ProductCard extends StatelessWidget {
               Text(
                 '\$$price',
                 style: TextStyle(
-                  fontSize: fontSize, // Use the calculated font size
-                  color: Colors.black,
+                  fontSize: fontSize, 
                   fontWeight: FontWeight.bold,)
               ),
               const SizedBox(height: 15),

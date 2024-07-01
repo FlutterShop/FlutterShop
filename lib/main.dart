@@ -18,9 +18,8 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => ColorSelectionModel()),
-        ChangeNotifierProvider(create: (context) => ThemeModel()),
       ],
-      child: Consumer<ThemeModel>(
+      child: Consumer<ColorSelectionModel>(
         builder: (context, themeModel, child) {
           return MaterialApp(
             theme: themeModel.isDarkMode ? ThemeData.dark() : ThemeData.light(),
@@ -32,13 +31,3 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class ThemeModel with ChangeNotifier {
-  bool _isDarkMode = false;
-
-  bool get isDarkMode => _isDarkMode;
-
-  void toggleDarkMode() {
-    _isDarkMode = !_isDarkMode;
-    notifyListeners();
-  }
-}

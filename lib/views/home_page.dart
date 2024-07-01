@@ -5,6 +5,7 @@ import 'package:shoes_shop/authentication/login_screen.dart';
 import 'package:shoes_shop/authentication/pre_account_screen.dart';
 
 import 'package:shoes_shop/views/cart_page.dart';
+import 'package:shoes_shop/views/color_selection.dart';
 import 'package:shoes_shop/views/product_list_page.dart';
 import 'package:provider/provider.dart';
 
@@ -61,7 +62,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Provider.of<ThemeModel>(context, listen: false).toggleDarkMode();
+          Provider.of<ColorSelectionModel>(context, listen: false).toggleDarkMode();
         },
         child: Icon(Icons.brightness_4),
       ),

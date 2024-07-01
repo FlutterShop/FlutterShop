@@ -48,7 +48,7 @@ class PreAccountScreen extends StatelessWidget {
               },
               child: const Text(
                 'Sign Up',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17, color:  Color.fromARGB(255, 2, 79, 52)),
               ),
             ),
             const SizedBox(
@@ -74,7 +74,7 @@ class PreAccountScreen extends StatelessWidget {
               },
               child: const Text(
                 'Log In',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17, color:  Color.fromARGB(255, 2, 79, 52)),
               ),
             ),
           ],
