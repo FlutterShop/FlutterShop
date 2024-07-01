@@ -24,8 +24,11 @@ buy quality sports shoes for sports and improve their own health.
 
 # Resourses:
 > Materials from course "Flutter: Creating Cross-Platform Applications"
+
 > Stack Overflow
+
 > Youtube videos
+
 > Pub.dev web site 
 
 
