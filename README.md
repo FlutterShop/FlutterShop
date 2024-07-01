@@ -1,9 +1,12 @@
 #  About project:
-> Our project is a full-fledged mobile application for an online sneaker store.
+> Our project is a full-fledged mobile 
+application for an online sneaker store .
 
-> The project was created so that users have the opportunity to buy quality sports shoes for sports and improve their own health.
+> The project was created so that users have the opportunity to 
+buy quality sports shoes for sports and improve their own health.
 
->The project was created so that users have the opportunity to buy quality sports shoes for sports and improve their own health.
+>The project was created so that users have the opportunity to 
+buy quality sports shoes for sports and improve their own health.
 
 # Our application includes the following functionality:
 * Authorisation/registration
