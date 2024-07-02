@@ -68,7 +68,7 @@ jobs:
           firebase-version: '9.14.0'  
 
       - name: Login to Firebase
-        run: firebase login:ci --token "${{AIzaSyAJk-hcVwpusgYohziLWxrVMu-4CW3J0As}}"
+        run: firebase login:ci --token "${{795339981839}}"
 
       - name: Deploy to Firebase Hosting
         run: firebase deploy --only hosting
