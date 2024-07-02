@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:shoes_shop/authentication/account_screen.dart';
 import 'package:shoes_shop/authentication/reset_password_screen.dart';
 import 'package:shoes_shop/authentication/signup_screen.dart';
+import 'package:shoes_shop/services/google_auth_service.dart';
 
 import 'package:shoes_shop/services/snack_bar.dart';
 import 'package:shoes_shop/views/home_page.dart';
@@ -127,6 +128,41 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: const Center(child: Text('Login')),
               ),
               const SizedBox(height: 30),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: Row(
+                  children: [
+                    const Expanded(
+                      child: Divider(
+                        thickness: 0.5,
+                        color: Colors.blueGrey,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                      child: Text(
+                        'Or continue with',
+                        style: TextStyle(color: Colors.green[200]),
+                      ),
+                    ),
+                    const Expanded(
+                      child: Divider(
+                        thickness: 0.5,
+                        color: Colors.blueGrey,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 10),
+              GestureDetector(
+                onTap: () => GoogleAuthService().signInWithGoogle(context),
+                child: Image.asset(
+                  "assets/images/google_logo.png",
+                  height: 80,
+                ),
+              ),
+              const SizedBox(height: 20),
               TextButton(
                 onPressed: () => Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) => const SignUpScreen())),

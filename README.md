@@ -1,18 +1,38 @@
 #  About project:
+<<<<<<< HEAD
 ## Our project is a full-fledged mobile application for an online sneaker store
+=======
+> Our project is a full-fledged mobile 
+application for an online sneaker store .
+>>>>>>> 840ecdb5222131a4ec09e189d9d88989bd96e0b3
 
+> The project was created so that users have the opportunity to 
+buy quality sports shoes for sports and improve their own health.
 
-# We were tasked with writing a mobile application on Flutter in which you can view, select and buy your favorite sneakers and find out information about them.
-
-# The project was created so that users have the opportunity to buy quality sports shoes for sports and improve their own health.
+>The project was created so that users have the opportunity to 
+buy quality sports shoes for sports and improve their own health.
 
 # Our application includes the following functionality:
+* Authorisation/registration
+* Product cards
+* Product filter
+* Basket
+* Payment
+
+# Get started:
+1.
+2.
+3.
+4.
+5.
+
+# Resourses:
+> Materials from course "Flutter: Creating Cross-Platform Applications"
+
+> Stack Overflow
+
+> Youtube videos
+
+> Pub.dev web site 
 
 
-# 1) registration and account login
-
-# 2) filtering sneakers by brand and color scheme
-
-# 3) Adding sneakers to the shopping cart and simulating payment
-
-# 4) view the history of creating sneaker models
