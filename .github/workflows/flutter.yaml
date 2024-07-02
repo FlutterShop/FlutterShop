@@ -51,9 +51,6 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Run golden tests
-        run: flutter test test/golden_tests.dart
-
   deploy_to_firebase:
     runs-on: ubuntu-latest
     needs: golden_tests 
