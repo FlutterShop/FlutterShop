@@ -1,10 +1,7 @@
 #  About project:
-<<<<<<< HEAD
-## Our project is a full-fledged mobile application for an online sneaker store
-=======
+
 > Our project is a full-fledged mobile 
 application for an online sneaker store .
->>>>>>> 840ecdb5222131a4ec09e189d9d88989bd96e0b3
 
 > The project was created so that users have the opportunity to 
 buy quality sports shoes for sports and improve their own health.
