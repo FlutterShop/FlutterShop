@@ -31,6 +31,11 @@ jobs:
       - name: Run widget tests
         run: flutter test --coverage
 
+      - name: Run golden tests
+        run: |
+          sudo apt-get install -y libgl1-mesa-glx
+          xvfb-run -s "-screen 0 1280x1024x24" flutter test --coverage
+
       - name: Upload test coverage
         uses: actions/upload-artifact@v3
         with:
@@ -54,4 +59,4 @@ jobs:
         with:
           name: flutter
           path: coverage/lcov.info
-          format: lcov
+          reporter: lcov
