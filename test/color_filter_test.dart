@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
-import 'package:shoes_shop/views/brand_filter.dart';
+import 'package:shoes_shop/views/color_filter.dart';
 import 'package:shoes_shop/views/color_selection.dart';
 
 void main() {
-  testWidgets('BrandFilter toggles selection and updates model', (WidgetTester tester) async {
+  testWidgets('ColorFilter toggles selection and updates model', (WidgetTester tester) async {
     final colorSelectionModel = ColorSelectionModel();
 
     await tester.pumpWidget(
@@ -13,23 +13,23 @@ void main() {
         value: colorSelectionModel,
         child: MaterialApp(
           home: Scaffold(
-            body: BrandFilter(brandName: 'Nike'),
+            body: ColorFilter(backgroudColor: Colors.blue, color: 'blue'),
           ),
         ),
       ),
     );
 
-    expect(find.text('Nike'), findsOneWidget);
-    expect(colorSelectionModel.selectedBrands, isEmpty);
+    expect(find.text('blue'), findsOneWidget);
+    expect(colorSelectionModel.selectedColors, isEmpty);
 
     await tester.tap(find.byType(TextButton));
     await tester.pumpAndSettle();
 
-    expect(colorSelectionModel.selectedBrands, ['Nike']);
+    expect(colorSelectionModel.selectedColors, ['blue']);
 
     await tester.tap(find.byType(TextButton));
     await tester.pumpAndSettle();
 
-    expect(colorSelectionModel.selectedBrands, isEmpty);
+    expect(colorSelectionModel.selectedColors, isEmpty);
   });
 }

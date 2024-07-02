@@ -1,15 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:shoes_shop/authentication/account_screen.dart';
-import 'package:shoes_shop/authentication/login_screen.dart';
 import 'package:shoes_shop/authentication/pre_account_screen.dart';
-
 import 'package:shoes_shop/views/cart_page.dart';
-import 'package:shoes_shop/views/color_selection.dart';
 import 'package:shoes_shop/views/product_list_page.dart';
-import 'package:provider/provider.dart';
-
-import '../main.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -25,7 +19,7 @@ class _HomePageState extends State<HomePage> {
   List<Widget> get pages => [
         const ProductListPage(),
         const CartPage(),
-        user!= null? const AccountScreen() : const PreAccountScreen(),
+        user != null ? const AccountScreen() : const PreAccountScreen(),
       ];
 
   @override
@@ -45,6 +39,8 @@ class _HomePageState extends State<HomePage> {
           });
         },
         currentIndex: currentPage,
+        selectedItemColor: const Color.fromARGB(255, 2, 79, 52),
+        unselectedItemColor: const Color.fromARGB(255, 175, 173, 173),
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.manage_search_rounded),
@@ -59,12 +55,6 @@ class _HomePageState extends State<HomePage> {
             label: '',
           ),
         ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Provider.of<ColorSelectionModel>(context, listen: false).toggleDarkMode();
-        },
-        child: Icon(Icons.brightness_4),
       ),
     );
   }
