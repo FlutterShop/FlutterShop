@@ -20,7 +20,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.10.0'
+          flutter-version: '^3.0.0'  # Убедитесь, что эта версия соответствует требованиям вашего проекта
 
       - name: Install dependencies
         run: flutter pub get
@@ -59,4 +59,4 @@ jobs:
         with:
           name: flutter
           path: coverage/lcov.info
-          reporter: lcov
+          reporter: lcov-reporter  # Замените на подходящее значение для вашего репортера
