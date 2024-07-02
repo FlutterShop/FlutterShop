@@ -1,4 +1,5 @@
-# Our project is a full-fledged mobile application for an online sneaker store
+#  About project:
+## Our project is a full-fledged mobile application for an online sneaker store
 
 
 # We were tasked with writing a mobile application on Flutter in which you can view, select and buy your favorite sneakers and find out information about them.
